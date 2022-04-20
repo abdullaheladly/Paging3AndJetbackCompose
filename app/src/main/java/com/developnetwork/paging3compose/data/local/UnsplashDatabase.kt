@@ -8,8 +8,11 @@ import com.developnetwork.paging3compose.model.UnsplashImage
 import com.developnetwork.paging3compose.model.UnsplashRemoteKeys
 
 
-@Database(entities = [UnsplashImage::class,UnsplashRemoteKeys::class], version = 1)
-abstract class UnsplashDatabase:RoomDatabase() {
-    abstract fun unsplashImageDao():UnsplashImageDao
-    abstract fun unsplashRemoteKeysDao():UnsplashRemoteKeysDao
+
+@Database(entities = [UnsplashImage::class, UnsplashRemoteKeys::class], version = 1)
+abstract class UnsplashDatabase : RoomDatabase() {
+
+    abstract fun unsplashImageDao(): UnsplashImageDao
+    abstract fun unsplashRemoteKeysDao(): UnsplashRemoteKeysDao
+
 }

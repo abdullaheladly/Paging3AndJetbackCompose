@@ -8,6 +8,8 @@ import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.rememberNavController
+import com.developnetwork.paging3compose.navigation.SetupNavGraph
 import com.developnetwork.paging3compose.ui.theme.Paging3ComposeTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -18,7 +20,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Paging3ComposeTheme {
-
+                val navController= rememberNavController( )
+                SetupNavGraph(navController = navController)
             }
         }
     }
