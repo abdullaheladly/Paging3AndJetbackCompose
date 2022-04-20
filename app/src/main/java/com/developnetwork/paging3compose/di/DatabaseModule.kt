@@ -3,7 +3,6 @@ package com.developnetwork.paging3compose.di
 import android.content.Context
 import androidx.room.Room
 import com.developnetwork.paging3compose.data.local.UnsplashDatabase
-import com.developnetwork.paging3compose.model.UnsplashImage
 import com.developnetwork.paging3compose.utils.Constants.UNSPLASH_DATABASE
 import dagger.Module
 import dagger.Provides
